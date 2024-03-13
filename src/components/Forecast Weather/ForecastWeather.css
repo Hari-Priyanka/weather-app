@@ -1,0 +1,70 @@
+.forecast_card{
+    margin: 5rem 0;
+    width: 100%;
+}
+
+.forecast_card h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 2rem;
+}
+
+.forecast_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.forecast_card_item{
+    width: 290px;
+    background-color: var(--black);
+    border: none;
+    padding: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    box-shadow: var(--boxShadow);
+}
+
+.forecast_card_item p{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.forecast_card_item .temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forecast_card_item .temperature p{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.forecast_card_item .temperature h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0;
+}
+
+.weather_card_container .temperature img{
+    width: 130px;
+    height: 130px;
+}
+
+@media screen and (max-width: 768px){
+    .forecast_container{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .forecast_card_item{
+        margin-right: 0.5rem;
+    }
+}
